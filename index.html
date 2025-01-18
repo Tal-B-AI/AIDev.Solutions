@@ -84,13 +84,28 @@
         .service p {
             margin-top: 1rem;
         }
-        #projects ul {
-            list-style-type: disc;
-            margin: 0;
-            padding-left: 1.5rem;
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
-        #projects li {
-            margin: 0.5rem 0;
+        .project {
+            background: #1f1f1f;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            background-color: #292929;
+        }
+        .project h3 {
+            color: #4aa4ff;
+            margin-bottom: 1rem;
+        }
+        .project p {
+            margin: 0;
         }
         .contact {
             text-align: center;
@@ -143,6 +158,7 @@
     <nav>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
     <section id="services">
@@ -168,14 +184,47 @@
     </section>
     <section id="projects">
         <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>GenAI Chatbot</h3>
+                <p>Developed a GenAI-driven chatbot for automated customer service, enhancing user engagement by 40%.</p>
+            </div>
+            <div class="project">
+                <h3>Predictive Maintenance</h3>
+                <p>Created a predictive maintenance system for IoT devices, reducing downtime by 25% and saving costs on equipment repair.</p>
+            </div>
+            <div class="project">
+                <h3>Personalized Recommendations</h3>
+                <p>Built a recommendation engine for e-commerce platforms, increasing sales by 30% through targeted suggestions.</p>
+            </div>
+            <div class="project">
+                <h3>Fraud Detection System</h3>
+                <p>Designed a real-time fraud detection system for financial services, preventing $1M in fraudulent transactions monthly.</p>
+            </div>
+            <div class="project">
+                <h3>Document Processing AI</h3>
+                <p>Implemented an AI-powered document processing system, reducing manual work by 60%.</p>
+            </div>
+            <div class="project">
+                <h3>Social Media Insights</h3>
+                <p>Deployed a sentiment analysis tool for social media, boosting marketing ROI by 35%.</p>
+            </div>
+            <div class="project">
+                <h3>AI Hiring Assistant</h3>
+                <p>Created an AI-powered hiring assistant, improving recruitment efficiency and matching candidates to roles with 95% accuracy.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>Who Are We</h2>
+        <p>Simply collecting data is not enough—you can make smart use of your company data! AI Dev Solutions is a one-stop-shop AI consulting company that helps businesses achieve their goals through the power of AI.</p>
+        <p>Our team of experts has over 15 years of experience in developing and implementing AI solutions across industries, including healthcare, finance, retail, manufacturing, marketing, and more. We work closely with our clients to understand their needs and provide customized AI solutions that drive strong value for their businesses.</p>
+        <h3>Why Choose Us:</h3>
         <ul>
-            <li>Developed a GenAI-driven chatbot for automated customer service, enhancing user engagement by 40%.</li>
-            <li>Created a predictive maintenance system for IoT devices, reducing downtime by 25% and saving costs on equipment repair.</li>
-            <li>Built a personalized recommendation engine for e-commerce platforms, increasing sales by 30% through targeted suggestions.</li>
-            <li>Designed a real-time fraud detection system for financial services using advanced ML algorithms, preventing $1M in fraudulent transactions monthly.</li>
-            <li>Implemented an AI-powered document processing system for compliance and automation, reducing manual work by 60%.</li>
-            <li>Deployed a social media sentiment analysis tool, providing insights that boosted marketing ROI by 35%.</li>
-            <li>Created an AI-powered hiring assistant, improving recruitment efficiency and matching candidates to roles with 95% accuracy.</li>
+            <li><strong>Tailored Solutions:</strong> Customized, ongoing AI solutions.</li>
+            <li><strong>One-Stop-Shop:</strong> From research to coding and deployment.</li>
+            <li><strong>AI & Data Expertise:</strong> Extensive experience in a variety of AI solutions.</li>
+            <li><strong>Cost-Effective:</strong> Delivering fast impact with a strong return on investment.</li>
         </ul>
     </section>
     <section id="contact" class="contact">
