@@ -14,171 +14,150 @@
             background-color: #121212;
         }
         header {
-            background-color: #1f1f1f;
-            color: #e0e0e0;
-            padding: 2rem 0;
-            text-align: center;
-            background-image: url('GB.webp');
+            background: linear-gradient(135deg, rgba(0, 119, 255, 0.8), rgba(0, 44, 128, 0.8)), url('GB.webp');
             background-size: cover;
             background-position: center;
+            text-align: center;
+            color: #e0e0e0;
+            padding: 4rem 1rem;
         }
         header h1 {
             margin: 0;
             font-size: 3.5rem;
-            color: #4aa4ff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         header p {
-            margin: 0.5rem 0 0;
+            margin-top: 1rem;
             font-size: 1.2rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #d6e4ff;
         }
         nav {
             display: flex;
-            justify-content: center;
-            background: #333;
-            padding: 1rem 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+            justify-content: space-between;
+            align-items: center;
+            background: #1f1f1f;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: #e0e0e0;
-            margin: 0 1.5rem;
+            color: #ffffff;
+            margin: 0 1rem;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #4aa4ff;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
         }
         section {
-            padding: 3rem;
+            padding: 4rem 2rem;
             max-width: 1200px;
             margin: auto;
         }
         section h2 {
             text-align: center;
-            color: #e0e0e0;
+            font-size: 2.5rem;
+            color: #4aa4ff;
             margin-bottom: 2rem;
         }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-        .service {
-            flex: 1;
-            min-width: 300px;
-            background: #1f1f1f;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
-        }
-        .service:hover {
-            transform: scale(1.05);
-            background-color: #292929;
-        }
-        .service h3 {
-            color: #e0e0e0;
-        }
-        .service p {
-            margin-top: 1rem;
-        }
-        .projects {
+        .services, .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        .project {
-            background: #1f1f1f;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
-        }
-        .project:hover {
-            transform: scale(1.05);
-            background-color: #292929;
-        }
-        .project h3 {
-            color: #4aa4ff;
-            margin-bottom: 1rem;
-        }
-        .project p {
-            margin: 0;
-        }
-        .contact {
-            text-align: center;
-            margin: 3rem 0;
+        .service, .project {
             background: #1f1f1f;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .service:hover, .project:hover {
+            transform: scale(1.05);
+            background: #292929;
+        }
+        .service h3, .project h3 {
+            color: #4aa4ff;
+            margin-bottom: 1rem;
+        }
+        .service p, .project p {
+            color: #d6e4ff;
+        }
+        .contact {
+            text-align: center;
+            background: #292929;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            margin-top: 3rem;
         }
         .contact a {
             display: inline-block;
+            margin: 1rem;
             padding: 0.8rem 1.5rem;
-            color: #e0e0e0;
-            background: #0073e6;
+            font-weight: bold;
+            color: #ffffff;
+            background: #4aa4ff;
             text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
-            margin: 1rem 0;
+            transition: background-color 0.3s ease;
         }
         .contact a:hover {
-            background: #005bb5;
+            background: #0073e6;
         }
         footer {
             text-align: center;
-            padding: 1rem 0;
-            background: #333;
-            color: #e0e0e0;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-        .social-links a {
-            color: #e0e0e0;
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-        .social-links a:hover {
-            color: #0073e6;
+            padding: 2rem 1rem;
+            background: #1f1f1f;
+            color: #d6e4ff;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>AI Dev Solutions</h1>
-        <p>Innovative AI & GenAI Solutions for a Smarter Future</p>
+        <p>Transforming businesses with cutting-edge AI and GenAI technologies.</p>
     </header>
     <nav>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <div class="logo">AI Dev Solutions</div>
+        <div>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
     <section id="services">
         <h2>Services</h2>
         <div class="services">
             <div class="service">
-                <h3>AI & GenAI Development</h3>
-                <p>Delivering cutting-edge AI and GenAI solutions tailored to your business needs. Example: Deploying a conversational AI assistant that reduced customer service response time by 50% while improving satisfaction ratings.</p>
+                <h3>AI Strategy</h3>
+                <p>Develop tailored AI roadmaps and strategies to maximize impact and ROI for your business.</p>
+            </div>
+            <div class="service">
+                <h3>GenAI Development</h3>
+                <p>Build advanced generative AI solutions to automate workflows and improve decision-making.</p>
             </div>
             <div class="service">
                 <h3>Data Science & Analytics</h3>
-                <p>Transforming data into actionable insights through predictive modeling, statistical analysis, and real-time data visualization. Example: Building a sales forecasting model that increased revenue accuracy by 25%.</p>
+                <p>Turn data into actionable insights through predictive modeling, advanced analytics, and real-time dashboards.</p>
             </div>
             <div class="service">
-                <h3>MLOps & Deployment</h3>
-                <p>End-to-end AI lifecycle management, ensuring seamless integration, continuous monitoring, and scalability for deployed models. Example: Automating deployment pipelines for machine learning models, reducing deployment time by 80%.</p>
-            </div>
-            <div class="service">
-                <h3>Innovation & Strategy</h3>
-                <p>Partnering with businesses to craft AI-driven strategies that maximize ROI and foster a culture of innovation. Example: Advising a fintech company on leveraging AI to identify fraud patterns, saving millions annually.</p>
+                <h3>MLOps Solutions</h3>
+                <p>Deploy, monitor, and scale machine learning models seamlessly across your organization.</p>
             </div>
         </div>
     </section>
@@ -186,58 +165,31 @@
         <h2>Projects</h2>
         <div class="projects">
             <div class="project">
-                <h3>GenAI Chatbot</h3>
-                <p>Developed a GenAI-driven chatbot for automated customer service, enhancing user engagement by 40%.</p>
-            </div>
-            <div class="project">
-                <h3>Predictive Maintenance</h3>
-                <p>Created a predictive maintenance system for IoT devices, reducing downtime by 25% and saving costs on equipment repair.</p>
-            </div>
-            <div class="project">
                 <h3>Personalized Recommendations</h3>
-                <p>Built a recommendation engine for e-commerce platforms, increasing sales by 30% through targeted suggestions.</p>
+                <p>Developed a recommendation engine for e-commerce platforms, increasing sales by 30%.</p>
             </div>
             <div class="project">
                 <h3>Fraud Detection System</h3>
-                <p>Designed a real-time fraud detection system for financial services, preventing $1M in fraudulent transactions monthly.</p>
+                <p>Designed a fraud detection solution that prevented $1M+ in losses for financial institutions.</p>
             </div>
             <div class="project">
-                <h3>Document Processing AI</h3>
-                <p>Implemented an AI-powered document processing system, reducing manual work by 60%.</p>
-            </div>
-            <div class="project">
-                <h3>Social Media Insights</h3>
-                <p>Deployed a sentiment analysis tool for social media, boosting marketing ROI by 35%.</p>
-            </div>
-            <div class="project">
-                <h3>AI Hiring Assistant</h3>
-                <p>Created an AI-powered hiring assistant, improving recruitment efficiency and matching candidates to roles with 95% accuracy.</p>
+                <h3>AI Chatbot</h3>
+                <p>Implemented a GenAI-powered chatbot that improved customer satisfaction by 40%.</p>
             </div>
         </div>
     </section>
     <section id="about">
-        <h2>Who Are We</h2>
-        <p>Simply collecting data is not enough—you can make smart use of your company data! AI Dev Solutions is a one-stop-shop AI consulting company that helps businesses achieve their goals through the power of AI.</p>
-        <p>Our team of experts has over 15 years of experience in developing and implementing AI solutions across industries, including healthcare, finance, retail, manufacturing, marketing, and more. We work closely with our clients to understand their needs and provide customized AI solutions that drive strong value for their businesses.</p>
-        <h3>Why Choose Us:</h3>
-        <ul>
-            <li><strong>Tailored Solutions:</strong> Customized, ongoing AI solutions.</li>
-            <li><strong>One-Stop-Shop:</strong> From research to coding and deployment.</li>
-            <li><strong>AI & Data Expertise:</strong> Extensive experience in a variety of AI solutions.</li>
-            <li><strong>Cost-Effective:</strong> Delivering fast impact with a strong return on investment.</li>
-        </ul>
+        <h2>About Us</h2>
+        <p>At AI Dev Solutions, we believe in harnessing the power of AI to unlock new possibilities. With over 15 years of experience across industries, our mission is to provide solutions that drive growth, efficiency, and innovation.</p>
     </section>
     <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Let’s build the future together. Reach out to discuss your needs or collaborate on innovative projects.</p>
+        <h2>Contact Us</h2>
+        <p>Ready to transform your business? Get in touch with us today.</p>
         <a href="mailto:info@aidevsolutions.com">Email Us</a>
         <a href="https://linkedin.com/company/ai-dev-solutions" target="_blank">LinkedIn</a>
     </section>
     <footer>
         <p>&copy; 2025 AI Dev Solutions. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/company/ai-dev-solutions" target="_blank">LinkedIn</a>
-        </div>
     </footer>
 </body>
 </html>
